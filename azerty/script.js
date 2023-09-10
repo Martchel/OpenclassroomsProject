@@ -1,7 +1,5 @@
 console.log("Hello World");
 
-let listeMots = ["Cachalot", "Pétunia", "Serviette"]
-let listPhrases = ["Pas de panique!", "La vie, l'univers et le reste", "Merci pour le poisson"]
 let score = 0
 
 let pageActivated = true
