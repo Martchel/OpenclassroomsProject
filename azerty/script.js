@@ -4,38 +4,48 @@ let listeMots = ["Cachalot", "Pétunia", "Serviette"]
 let listPhrases = ["Pas de panique!", "La vie, l'univers et le reste", "Merci pour le poisson"]
 let score = 0
 
-let choix = prompt("Entrez le type de liste: mots ou phrases")
+let pageActivated = true
 
-if (choix === "mots"){
-    for ( let i = 0; i<listeMots.length; i++) {
+while (pageActivated){
+    let choix = prompt("Entrez le type de liste: mots ou phrases")
 
-        let motUtilisateur = prompt("Entrez le premier mot : " + listeMots[i])
 
-        if (motUtilisateur === listeMots[i]) {
-            score += 1
-            console.log("Bravo !")
-        } else {
-            console.log("Vous avez fait une erreur de frappe.")
-        }
+    switch (choix){
+        case "mots":
+            for ( let i = 0; i<listeMots.length; i++) {
 
-        console.log("Voici votre score: " + score)
-    }
-} else {
-    for ( let i = 0; i<listPhrases.length; i++) {
+                let motUtilisateur = prompt("Entrez le premier mot : " + listeMots[i])
 
-        let motUtilisateur = prompt("Entrez le premier mot : " + listPhrases[i])
+                if (motUtilisateur === listeMots[i]) {
+                    score += 1
+                    console.log("Bravo !")
+                } else {
+                    console.log("Vous avez fait une erreur de frappe.")
+                }
 
-        if (motUtilisateur === listPhrases[i]) {
-            score += 1
-            console.log("Bravo !")
-        } else {
-            console.log("Vous avez fait une erreur de frappe.")
-        }
+                console.log("Voici votre score: " + score)
+            }
+            break
+        case "phrases":
+            for ( let i = 0; i<listPhrases.length; i++) {
 
-        console.log("Voici votre score: " + score)
+                let motUtilisateur = prompt("Entrez le premier mot : " + listPhrases[i])
+
+                if (motUtilisateur === listPhrases[i]) {
+                    score += 1
+                    console.log("Bravo !")
+                } else {
+                    console.log("Vous avez fait une erreur de frappe.")
+                }
+
+                console.log("Voici votre score: " + score)
+            }
+            break
+        default: 
+        console.log("Mots inccorecte")
+            break
     }
 }
-
 
 
 //  motUtilisateur = prompt("Entrez le deuxième mot : " + listeMots[1])
