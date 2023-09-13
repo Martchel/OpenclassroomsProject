@@ -1,13 +1,15 @@
+// Display a first message
 console.log("Hello World");
 
+// Initialise score and pageActivated
 let score = 0
-
 let pageActivated = true
 
+// Loop to know tha teven if "mots" or "phrases" is spelled wrong, the question is still asked
 while (pageActivated){
     let choix = prompt("Entrez le type de liste: mots ou phrases")
 
-
+// Conditions according to the word written in the prompt
     switch (choix){
         case "mots":
             for ( let i = 0; i<listeMots.length; i++) {
@@ -44,26 +46,3 @@ while (pageActivated){
             break
     }
 }
-
-
-//  motUtilisateur = prompt("Entrez le deuxième mot : " + listeMots[1])
-
-// if (motUtilisateur === listeMots[1]) {
-//     score ++
-//     console.log("Bravo ! ")
-// } else {
-//     console.log("Vous avez fait une erreur de frappe.")
-// }
-
-// console.log("Voici votre score: " + score)
-
-// motUtilisateur = prompt("Entrez le troisième mot : " + listeMots[2])
-
-// if (motUtilisateur === listeMots[2]) {
-//     score ++
-//     console.log("Bravo !")
-// } else {
-//     console.log("Vous avez fait une erreur de frappe.")
-// }
-
-// console.log("Voici votre score: " + score)
