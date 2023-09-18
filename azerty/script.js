@@ -33,7 +33,7 @@ function lancerBoucleDeJeu(liste)
 
 function lancerJeu(){
     
-    let choix =choisirPhrasesOuMots()
+    let choix = choisirPhrasesOuMots()
     let nbMots = 0
     let score = 0
     if (choix=== "mots"){
@@ -48,5 +48,3 @@ function lancerJeu(){
     }
 
 }
-
-lancerJeu()
