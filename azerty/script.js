@@ -35,13 +35,13 @@ function lancerJeu(){
     
     let choix =choisirPhrasesOuMots()
     let nbMots = 0
+    let score = 0
     if (choix=== "mots"){
-        lancerBoucleDeJeu(listeMots)
+        score = lancerBoucleDeJeu(listeMots)
         nbMots = listeMots.length
-        score += 1
         afficherResultat(score, nbMots)
     }else{
-        lancerBoucleDeJeu(listPhrases)
+        score = lancerBoucleDeJeu(listPhrases)
         nbMots = listPhrases.length
         afficherResultat(score, nbMots)
         
