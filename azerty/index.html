@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="script/config.js" defer></script>
+    <script src="script/pop.js" defer></script>
     <script src="script/script.js" defer></script>
     <script src="script/main.js" defer></script>
 </head>
@@ -13,7 +14,7 @@
     <header>
         <h1>Azerty</h1>
     </header>
-    
+
     <main>
     <div class="zoneChoix">
         <input type="radio" name="optionSource" id="mots" value="1" checked>
@@ -23,6 +24,15 @@
     </div>
     <div class="zoneProposition">
         Entrez le mot : <span>Cachalot</span>
+    </div>
+
+    <div class="zoneSaisie">
+        <input type="text" id="inputEcriture" name="">
+        <button id="btnValide">Valider</button>
+    </div>
+
+    <div class="zoneScore">
+        votre score : <span>0</span>
     </div>
     </main>
 

@@ -73,11 +73,6 @@ function lancerJeu() {
     let i = 0
     let listeProposition = listeMots
 
-    let btnValiderMot = document.getElementById("btnValiderMot")
-    let listeBtnRadio = document.querySelectorAll(".optionSource input")
-    let inputEcriture = document.getElementById("inputEcriture")
-
-
     afficherProposition(listeProposition[i])
 
     // Gestion de l'événement click sur le bouton "valider"
