@@ -1,6 +1,3 @@
-/**
- * Cette fonction affiche la popup pour partager son score. 
- */
 function afficherPopup() {
     let popupBackground = document.querySelector(".popupBackground")
     // La popup est masquée par défaut (display:none), ajouter la classe "active"
@@ -8,9 +5,6 @@ function afficherPopup() {
     popupBackground.classList.add("active")
 }
 
-/**
- * Cette fonction cache la popup pour partager son score. 
- */
 function cacherPopup() {
     let popupBackground = document.querySelector(".popupBackground")
     // La popup est masquée par défaut (display:none), supprimer la classe "active"
@@ -19,10 +13,6 @@ function cacherPopup() {
 }
 
 
-/**
- * Cette fonction initialise les écouteurs d'événements qui concernent 
- * l'affichage de la popup. 
- */
 function initAddEventListenerPopup() {
     // On écoute le click sur le bouton "partager"
     btnPartage = document.querySelector(".zonePartage button")
@@ -32,7 +22,6 @@ function initAddEventListenerPopup() {
         afficherPopup()
     })
 
-    // On écoute le click sur la div "popupBackground"
     popupBackground.addEventListener("click", (event) => {
         // Si on a cliqué précisément sur la popupBackground 
         // (et pas un autre élément qui se trouve dedant)
