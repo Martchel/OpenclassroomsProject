@@ -1,15 +1,8 @@
-/**
- * Reset
- */
  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/**
- * Eléments génériques
- */
 
 body {
     --color-primary: #f76c5e;
@@ -17,7 +10,6 @@ body {
     --color-tertiary: #ffeee6;    
 }
 
-/* Mise en forme des titres */
 h1 {
     margin: 10px;
     font-size: 60px;
@@ -39,7 +31,6 @@ h3 {
     color: var(--color-secondary);
 }
 
-/* Mise en forme des formulaires */
 input[type='radio'] {
     filter: grayscale(1); /* Grayscale passe le bouton en niveau de gris */
 }
@@ -244,6 +235,10 @@ footer {
 
 .popup button {
     margin: 5px;
+}
+
+#zoneProposition span {
+    font-weight: bold;
 }
 
 /** 
