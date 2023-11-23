@@ -68,7 +68,7 @@ function gererFormulaire(scoreEmail) {
 
 function lancerJeu() {
     // Initialisations
-    initAddEventListenerPopup()
+    // initAddEventListenerPopup()
     let score = 0
     let i = 0
     let listeProposition = listeMots
