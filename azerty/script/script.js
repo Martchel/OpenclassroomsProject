@@ -10,13 +10,12 @@
  * @param {number} nbMotsProposes : le nombre de mots proposés à l'utilisateur
  */
 function afficherResultat(score, nbMotsProposes) {
-    let body = document.querySelector("body") 
-    let html = `
-        <div class = "zoneScore">
-            Votre score est de ${score} sur ${nbMotsProposes}
-        </div>
-    `
-    body.innerHTML = html
+    let spanScore = document.querySelector(".zoneScore span")
+
+    let affichageScore = `${score}/${nbMotsProposes}`
+
+    spanScore.innerText = affichageScore
+    console.log("Votre score est de ${score} sur ${nbMotsProposes}")
 }
 
 /**
