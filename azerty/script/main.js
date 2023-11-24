@@ -1,15 +1,22 @@
-//lancerJeu()
-let btnValiderMot = document.getElementById("btnValiderMot")
-console.log(btnValiderMot)
-let listeBtnRadio = document.querySelectorAll(".optionSource input")
-console.log(listeBtnRadio)
-let inputEcriture = document.getElementById("inputEcriture")
-console.log(inputEcriture)
-let spanScore = document.querySelector(".zoneScore")
-console.log(spanScore)
-let divZoneProposition = document.querySelector(".zoneProposition")
-console.log(divZoneProposition)
-let listeInputRadio = document.querySelectorAll(".zoneChoix input");
-console.log(listeInputRadio)
-let baliseZonePropositionSpan = document.querySelector("#zoneProposition span")
-console.log(baliseZonePropositionSpan)
+/*********************************************************************************
+ * 
+ * Point d'entrée, c'est lui qui intialise le jeu et lance la boucle de jeu. 
+ * 
+ *********************************************************************************/
+
+lancerJeu()
+
+// let inputEcriture = document.getElementById("inputEcriture")
+// console.log(inputEcriture)
+
+// let btnValiderMot = document.getElementById("btnValiderMot")
+// console.log(btnValiderMot)
+
+// let zoneProposition = document.querySelector(".zoneProposition")
+// console.log(zoneProposition)
+
+// let spanScore = document.querySelector(".zoneScore span")
+// console.log(spanScore)
+
+// let listeBtnRadio = document.querySelectorAll(".optionSource input")
+// console.log(listeBtnRadio)
